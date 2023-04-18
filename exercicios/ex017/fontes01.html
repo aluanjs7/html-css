@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+        <style>
+            body {
+               font-family: 'work sans', Arial, Helvetica, sans-serif;
+               /*
+               Medidas Absolutas
+               cm (centímetro), mn (milímetro), in (polegada), px (pixel), pt (ponto), pc (paica).
+               
+               Medidas Relativas
+               em (altura M), ex(altura x), rem(rut, configuração natural), vw(largura view port)
+               vh (altura view port), %.
+               
+               Recomendação da W3C a ser usada é (px ou em)
+               16px geralmente = 1em / 2em seriam 32px 
+               (o em duplica o px)*/
+               
+               /* Geralmente nos sites se utiliza no font-size fonte no tamanho padrão (16px)
+               /*[font-size: 1em;]*/
+               
+               
+               
+               /*[font-weight: normal;](Negrito)
+               /*weight (peso), width (largura), height(altura)
+               /*lighter, normal, bold, bolder*/
+               /*100-900*/
+
+               /*[font-style: italic;] (Itálico)
+               text-decoration: underline; (Sublinhado)*/
+            }
+            h1{
+                /* shorthand font( junção das funções abaixo)
+                - font-style-> font-weight-> font-size-> font-family
+
+                font-family: 'work sans'; sans serif;
+                font-weight: bolder;
+                font-size: 3em;
+                font-style: italic;*/
+
+                font: italic bolder 3em 'work sans', sans serif;
+                }
+            h2{
+                font: bold 2em 'work sans';
+            }
+        </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laborum vel nulla, ut sint, autem aliquid placeat ullam quis provident officia neque obcaecati, deserunt et eos. Soluta perferendis fuga voluptatibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos tempora explicabo molestiae quibusdam, omnis maiores consequuntur obcaecati, aliquam neque, molestias magni nobis quo. Voluptates earum ea expedita! Alias, recusandae odit.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero itaque iure voluptatibus. Dicta assumenda soluta est nostrum voluptatibus beatae commodi provident aperiam corrupti laudantium quae sit illum, voluptate fuga rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea omnis qui voluptas repellendus ipsa magni ut corporis illo mollitia quia est fugiat, modi nesciunt sunt aut dolor cumque deserunt eligendi.</p>
+</body>
+</html>
